@@ -1,0 +1,23 @@
+# configuration file for development environment
+
+# the logger engine to use
+logger: "console"
+
+# core is the lowest, it shows Dancer's core log messages as well as yours
+# (debug, info, warning and error)
+log: "core"
+
+warnings: 1
+
+show_errors: 1
+
+# DO NOT EVER USE THIS FEATURE IN PRODUCTION 
+# OR TINY KITTENS SHALL DIE WITH LOTS OF SUFFERING
+auto_reload: 1
+
+plugins: 
+	Database:
+		driver: 'SQLite'
+		database: 'data/database'
+	Ajax: 
+		content_type: 'application/json'

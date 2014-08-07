@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use File::Slurp::Tiny qw/read_lines write_file/;
+use List::Util qw/shuffle/;
+
+my @words = read_lines('data/wordlist', chomp => 1); 
+
+my @output;
+
+for my $w1 ( @words ) {
+	for my $w2 ( @words ) {
+		push @output, "$w1 $w2" unless $w1 eq $w2;
+	}
+}
+
+write_file('data/pairs', join "\n", shuffle @output);
