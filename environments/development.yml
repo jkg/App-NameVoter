@@ -14,10 +14,3 @@ show_errors: 1
 # DO NOT EVER USE THIS FEATURE IN PRODUCTION 
 # OR TINY KITTENS SHALL DIE WITH LOTS OF SUFFERING
 auto_reload: 1
-
-plugins: 
-	Database:
-		driver: 'SQLite'
-		database: 'data/database'
-	Ajax: 
-		content_type: 'application/json'

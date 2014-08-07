@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="row">
+  	<div class="col-md-4">
+
+  	  <div class="panel panel-default">
+  		<div class="panel-heading">
+  		  <h2 class="panel-title" id="title1">Lammas Llamas</h2>
+  		</div>
+  		<div class="panel-body">
+  		  <form class="form-inline" role="form" action="/save" method="post">
+  		  	<div class="form-group">
+	  		  	<input class="btn btn-success" type="submit" value="Love it!">
+	  		  	<input class="btn btn-warning" type="submit" value="Maybe...">
+	  		  	<input class="btn btn-danger" type="submit" value="No Likey">
+  		  	</div>
+  		  </form>
+  		</div>
+  	  </div>
+
+  	</div>
+
+   <div class="col-md-4">
+
+  	  <div class="panel panel-default">
+  		<div class="panel-heading">
+  		  <h2 class="panel-title" id="title2">Lammas Llamas</h2>
+  		</div>
+  		<div class="panel-body">
+  		  <form class="form-inline" role="form" action="/save" method="post">
+  		  	<div class="form-group">
+	  		  	<input class="btn btn-success" type="submit" value="Love it!">
+	  		  	<input class="btn btn-warning" type="submit" value="Maybe...">
+	  		  	<input class="btn btn-danger" type="submit" value="No Likey">
+  		  	</div>
+  		  </form>
+  		</div>
+  	  </div>
+
+  	</div>
+  	<div class="col-md-4">
+
+  	  <div class="panel panel-default">
+  		<div class="panel-heading">
+  		  <h2 class="panel-title" id="title3">Lammas Llamas</h2>
+  		</div>
+  		<div class="panel-body">
+  		  <form class="form-inline" role="form" action="/save" method="post">
+  		  	<div class="form-group">
+	  		  	<input class="btn btn-success" type="submit" value="Love it!">
+	  		  	<input class="btn btn-warning" type="submit" value="Maybe...">
+	  		  	<input class="btn btn-danger" type="submit" value="No Likey">
+  		  	</div>
+  		  </form>
+  		</div>
+  	  </div>
+
+  	</div>
+  </div>
+  <div class="row">
+  	<div class="col-md-4">
+
+  	  <div class="panel panel-default">
+  		<div class="panel-heading">
+  		  <h2 class="panel-title" id="title4">Lammas Llamas</h2>
+  		</div>
+  		<div class="panel-body">
+  		  <form class="form-inline" role="form" action="/save" method="post">
+  		  	<div class="form-group">
+	  		  	<input class="btn btn-success" type="submit" value="Love it!">
+	  		  	<input class="btn btn-warning" type="submit" value="Maybe...">
+	  		  	<input class="btn btn-danger" type="submit" value="No Likey">
+  		  	</div>
+  		  </form>
+  		</div>
+  	  </div>
+
+  	</div>
+
+   <div class="col-md-4">
+
+  	  <div class="panel panel-default">
+  		<div class="panel-heading">
+  		  <h2 class="panel-title" id="title5">Lammas Llamas</h2>
+  		</div>
+  		<div class="panel-body">
+  		  <form class="form-inline" role="form" action="/save" method="post">
+  		  	<div class="form-group">
+	  		  	<input class="btn btn-success" type="submit" value="Love it!">
+	  		  	<input class="btn btn-warning" type="submit" value="Maybe...">
+	  		  	<input class="btn btn-danger" type="submit" value="No Likey">
+  		  	</div>
+  		  </form>
+  		</div>
+  	  </div>
+
+  	</div>
+  	<div class="col-md-4">
+
+  	  <div class="panel panel-default">
+  		<div class="panel-heading">
+  		  <h2 class="panel-title" id="title6">Lammas Llamas</h2>
+  		</div>
+  		<div class="panel-body">
+  		  <form class="form-inline" role="form" action="/save" method="post">
+  		  	<div class="form-group">
+	  		  	<input class="btn btn-success" type="submit" value="Love it!">
+	  		  	<input class="btn btn-warning" type="submit" value="Maybe...">
+	  		  	<input class="btn btn-danger" type="submit" value="No Likey">
+  		  	</div>
+  		  </form>
+  		</div>
+  	  </div>
+
+  	</div>
+  </div>
+
+
+</div>

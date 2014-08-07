@@ -26,6 +26,13 @@ template: "simple"
 #     start_tag: '[%'
 #     end_tag:   '%]'
 
+plugins: 
+  Database:
+    driver: 'SQLite'
+    database: 'data/database'
+  Ajax: 
+    content_type: 'application/json'
+
 # For session support enable the following line and see Dancer::Session
-# session: "YAML"
+session: Simple
 
