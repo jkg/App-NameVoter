@@ -30,11 +30,6 @@ get '/vote' => sub {
 	template 'vote', { name => session('user'), options => \@options };
 };
 
-get '/results' => sub {
-	redirect '/' unless session('user');
-
-}
-
 ajax '/show' => sub {
 	my $user = session->{user} || return { result => 0 };
 	my $string = $strings[rand @strings];
@@ -51,7 +46,7 @@ ajax '/save' => sub {
 
 	debug "strings contains" . scalar @strings . " elements";
 
-	validate: vote is a legit value, string is one we know, nonce matches
+	# validate: vote is a legit value, string is one we know, nonce matches
 	return $j->to_json( { result => 0 })
 		unless grep { $_ == params->{vote} } ( -1 .. 1 );
 	# 		&& grep +{ $_ eq params->{option} }, @strings;
