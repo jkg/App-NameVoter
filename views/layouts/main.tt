@@ -18,6 +18,11 @@
   </head>
   <body>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
     <div class="jumbotron">
       <h1>Unclosure Lammas Collective Mill Keep Ninjas</h1>
       <p>What makes for a great name for a product, service or organisation? Having people vote on pairs of random words, of course!</p>
@@ -25,11 +30,6 @@
     </div>
 
 <% content %>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
 
   </body>
 </html>
