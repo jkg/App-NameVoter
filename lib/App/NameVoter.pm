@@ -37,10 +37,11 @@ get '/results' => sub {
 
 	my $sth_overall = database->prepare(
 		'SELECT option, SUM(vote) AS score
-		 FROM votes v WHERE EXISTS ( 
-		 	SELECT * FROM votes WHERE v.option = option AND vote > 0
-		 ) GROUP BY option ORDER BY SUM(vote) DESC LIMIT 10'
-	);
+		 FROM votes 
+		 GROUP BY option
+		 HAVING score > 0
+		 ORDER BY score DESC'
+	) or die "failed to prepare sth";
 	$sth_overall->execute();
 
 
