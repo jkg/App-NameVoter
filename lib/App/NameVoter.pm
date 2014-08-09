@@ -24,6 +24,33 @@ post '/login' => sub {
 	}
 };
 
+get '/results' => sub {
+	redirect '/' unless session('user');
+
+	my $sth_faves = database->prepare(
+		'SELECT option, SUM(vote) AS score
+		 FROM votes v WHERE EXISTS ( 
+		 	SELECT * FROM votes WHERE v.option = option AND user = ? AND vote > 0
+		 ) GROUP BY option ORDER BY SUM(vote) DESC'
+	);
+	$sth_faves->execute(session('user'));
+
+	my $sth_overall = database->prepare(
+		'SELECT option, SUM(vote) AS score
+		 FROM votes v WHERE EXISTS ( 
+		 	SELECT * FROM votes WHERE v.option = option AND vote > 0
+		 ) GROUP BY option ORDER BY SUM(vote) DESC LIMIT 10'
+	);
+	$sth_overall->execute();
+
+
+	template 'results',
+		{ 
+			user_faves => $sth_faves->fetchall_arrayref({}),
+			overall => $sth_overall->fetchall_arrayref({}),
+		};
+};
+
 get '/vote' => sub {
 	redirect '/' unless session('user');
 	my @options = map { $strings[rand @strings] } ( 1..6 );

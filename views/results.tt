@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2>Your Favourites</h2>
+      <table class="table table-striped">
+        <thead>
+          <th>Option</th>
+          <th>Total Score</th>
+        </th>
+        <% FOREACH favourite IN user_faves %>
+        <tr>
+          <td><% favourite.option %></td>
+          <td><% favourite.score %></td>
+        </tr>
+        <% END %>
+      </table>
+      <h2>Top 10 Overall</h2>
+      <table class="table table-striped">
+        <thead>
+          <th>Option</th>
+          <th>Total Score</th>
+        </th>
+        <% FOREACH favourite IN overall %>
+        <tr>
+          <td><% favourite.option %></td>
+          <td><% favourite.score %></td>
+        </tr>
+        <% END %>
+      </table>
+    </div>
+  </div>
+</div>
